@@ -21,7 +21,7 @@ class IPAddressType(click.ParamType):
     def convert(self, value, param, ctx):
         if self.version == IP_V4:
             m = re.match(IPAddressType.ipv4_pattern, value)
-            error = '%s is not a valid ipv6 address' % value
+            error = '%s is not a valid ipv4 address' % value
         elif self.version == IP_V6:
             m = re.match(IPAddressType.ipv6_pattern, value)
             error = '%s is not a valid ipv6 address' % value

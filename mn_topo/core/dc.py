@@ -1,5 +1,5 @@
 
-def create_table_topology(data_centres=1, spines=2, leaves=4, hosts=1):
+def create_dc_topology(data_centres=1, spines=2, leaves=4, hosts=1):
     data = {
         'hosts': [],
         'switches': [],
