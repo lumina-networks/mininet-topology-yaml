@@ -7,7 +7,7 @@ clean:
 	rm -Rf mininet-topology.tar.gz mn_topo.egg-info .pytest_cache
 
 package:
-	make clean; tar -zcvf mininet-topology.tar.gz --exclude='.git' --exclude='Makefile' --exclude='.venv' --exclude='.pytest_cache' --exclude='mininet-topology.tar.gz' -C .. ./mininet-topology
+	make clean; tar -zcvf mininet-topology.tar.gz --exclude='.*' --exclude='Makefile' --exclude='mininet-topology.tar.gz' -C .. ./mininet-topology
 
 deploy:
 	make package && \

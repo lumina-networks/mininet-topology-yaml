@@ -23,4 +23,4 @@ def start_mn_from_topo(filename):
     mn = MininetTopology(topo)
     mn.start()
     mn.cli()
-    mn.stop
+    mn.stop()
