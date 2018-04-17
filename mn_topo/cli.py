@@ -24,6 +24,7 @@ def mininet(name='mininet'):
     """Mininet Topology Commands"""
     pass
 
+
 @mininet.command()
 @click.argument('filename', type=click.Path(), default='topo.yml')
 @click.option('--rows', type=click.INT, default=3, show_default=True)
@@ -56,6 +57,13 @@ def dc(filename, data_centres, spines, leaves, hosts, controller, interface):
     controllers = format_controller_option(controller)
     interfaces = format_interface_option(interface)
     api.create_dc_topology(filename, data_centres, spines, leaves, hosts, controllers, interfaces)
+
+
+@mininet.command()
+@click.argument('filename', type=click.Path(), default='topo.yml')
+def start(filename):
+    """Start Mininet from Topology File"""
+    api.start_mn_from_topo(filename)
 
 if __name__ == '__main__':
     mininet()
