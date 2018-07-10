@@ -1,5 +1,5 @@
-topology
-========
+Mininet Topology Yaml
+=====================
 
 .. image:: https://img.shields.io/pypi/v/topology.svg
     :target: https://pypi.python.org/pypi/topology
@@ -29,4 +29,4 @@ Licence
 Authors
 -------
 
-`topology` was written by `Lumina NetDev <info@luminanetworks.com>`_.
+`mininet-topology-yaml` was written by `Lumina NetDev <oss-dev@luminanetworks.com>`_.

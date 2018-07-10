@@ -1,19 +1,19 @@
 import setuptools
 
 setuptools.setup(
-    name="mn_topo",
-    version="0.1.0",
-    url="https://github.com/luminanetworks/mn_topo",
+    name="mininet-topology-yaml",
+    version="0.1.1",
+    url="https://github.com/luminanetworks/mininet-topology-yaml",
 
     author="Lumina NetDev",
-    author_email="dev@luminanetworks.com",
+    author_email="oss-dev@luminanetworks.com",
 
-    description="Mininet specific topology generator",
+    description="Mininet specific topology generator and parser",
     long_description=open('README.rst').read(),
 
     packages=setuptools.find_packages(),
 
-    install_requires=['click', 'topology'],
+    install_requires=['click', 'topology-yaml==0.1.1'],
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
