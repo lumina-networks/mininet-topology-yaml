@@ -55,6 +55,30 @@ Usage
       read    Read Topology File
 
 
+Troubleshooting
+~~~~~~~~~~~~~~~
+
+Could not load plugin
+---------------------
+
+::
+
+    Usage: topology-yaml [OPTIONS] COMMAND [ARGS]...
+
+    Options:
+      --help  Show this message and exit.
+
+    Commands:
+      create   Create Topology File
+      delete   Delete Topology File
+      mininet  † Warning: could not load plugin. See `topology-yaml mininet
+               --help`.
+      read     Read Topology File
+
+This warning generally occurs when mininet is not installed on the system. Ensure mininet is installed and the Python
+API for mininet is globally available.
+
+
 Documentation
 ~~~~~~~~~~~~~
 
