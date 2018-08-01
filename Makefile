@@ -5,7 +5,7 @@ help:
 	@echo "  documentation	render documentation"
 
 clean:
-	rm -Rf mininet-topology-yaml.tar.gz mininet_topology_yaml.egg-info .pytest_cache
+	rm -Rf mininet-topology-yaml.tar.gz mininet_topology_yaml.egg-info .pytest_cache dist build sdist
 
 package:
 	make clean; tar -zcvf mininet-topology-yaml.tar.gz --exclude='.*' --exclude='Makefile' --exclude='mininet-topology-yaml.tar.gz' -C .. ./mininet-topology-yaml
