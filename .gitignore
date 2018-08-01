@@ -43,3 +43,6 @@ nosetests.xml
 
 #Testing
 .pytest*
+
+# Doco
+docs/build
