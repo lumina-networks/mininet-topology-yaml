@@ -6,3 +6,10 @@ DEFAULT_CONTROLLERS = [{
     'user': 'admin',
     'password': 'admin'
 }]
+
+DEFAULT_CUSTOMERS = [{
+    'customer': 'test_customer',
+    'connects_to': 'test_switch_name',
+    'hostname': 'test_host_name',
+    'port': 20
+}]

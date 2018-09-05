@@ -5,6 +5,11 @@ controllers:
   port: 8181
   protocol: http
   user: admin
+customers:
+- hostname: test_host_name
+  port: 20
+  connects_to: test_switch_name
+  customer: test_customer
 hosts:
 - gw: 10.0.0.1
   ip: 10.0.1.1/16
