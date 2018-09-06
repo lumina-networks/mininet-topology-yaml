@@ -21,7 +21,9 @@ def format_interface_option(interface):
 
 def format_customer_option(customer):
     if customer:
-        return [merge_two_dicts(DEFAULT_CUSTOMERS[0], {'hostname': u_to_ascii(i[0]), 'port': i[1]}) for i in customer]
+        return [merge_two_dicts(DEFAULT_CUSTOMERS[0], {'customer': u_to_ascii(i[0]), 'connects_to': u_to_ascii(i[1]),
+                                                       'hostname': u_to_ascii(i[2]), 'port': int(u_to_ascii(i[3]))}) for
+                i in customer]
     return DEFAULT_CUSTOMERS
 
 
@@ -41,8 +43,8 @@ def mininet(name='mininet'):
               help='Multiple controller option Name and IP tuple')
 @click.option('--interface', type=click.Tuple([click.STRING, click.STRING]), multiple=True,
               help='Multiple interface option Name and Switch Name tuple')
-@click.option('--customer', type=click.Tuple([click.STRING, click.INT]), multiple=True,
-              help='Multiple customer option Host Name and Port Number tuple')
+@click.option('--customer', nargs=4, type=click.STRING, multiple=True,
+              help='Multiple customer option Customer Name, Endpoint, Host Name and Port Number')
 def table(filename, rows, columns, links_per_row, links_per_column, controller, interface, customer):
     """Create Table Topology File For Mininet"""
     controllers = format_controller_option(controller)
@@ -61,9 +63,9 @@ def table(filename, rows, columns, links_per_row, links_per_column, controller, 
               help='Multiple controller option Name and IP tuple')
 @click.option('--interface', type=click.Tuple([click.STRING, click.STRING]), multiple=True,
               help='Multiple interface option Name and Switch Name tuple')
-@click.option('--customer', type=click.Tuple([click.STRING, click.INT]), multiple=True,
-              help='Multiple customer option Host Name and Port Number tuple')
-def dc(filename, data_centres, spines, leaves, hosts, controller, interface,customer):
+@click.option('--customer', nargs=4, type=click.STRING, multiple=True,
+              help='Multiple customer option Customer Name, Endpoint, Host Name and Port Number')
+def dc(filename, data_centres, spines, leaves, hosts, controller, interface, customer):
     """Create DC Topology File For Mininet"""
     controllers = format_controller_option(controller)
     interfaces = format_interface_option(interface)

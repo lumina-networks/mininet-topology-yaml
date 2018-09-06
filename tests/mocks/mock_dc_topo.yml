@@ -8,7 +8,7 @@ controllers:
 customers:
 - hostname: test_host_name
   port: 20
-  connects_to: test_switch_name
+  connects_to: test_endpoint_name
   customer: test_customer
 hosts:
 - gw: 10.1.0.1

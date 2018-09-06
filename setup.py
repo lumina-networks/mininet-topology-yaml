@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="mininet-topology-yaml",
-    version="0.1.1",
+    version="0.1.2",
     url="https://github.com/luminanetworks/mininet-topology-yaml",
 
     author="Lumina NetDev",
@@ -13,7 +13,7 @@ setuptools.setup(
 
     packages=setuptools.find_packages(),
 
-    install_requires=['click', 'topology-yaml==0.1.1'],
+    install_requires=['click', 'topology-yaml==0.1.2'],
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',

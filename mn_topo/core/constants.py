@@ -9,7 +9,7 @@ DEFAULT_CONTROLLERS = [{
 
 DEFAULT_CUSTOMERS = [{
     'customer': 'test_customer',
-    'connects_to': 'test_switch_name',
+    'connects_to': 'test_endpoint_name',
     'hostname': 'test_host_name',
     'port': 20
 }]
