@@ -13,7 +13,7 @@ setuptools.setup(
 
     packages=setuptools.find_packages(),
 
-    install_requires=['click', 'topology-yaml==0.1.2'],
+    install_requires=['click', 'topology-yaml==0.1.2.1'],
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
