@@ -17,7 +17,7 @@ setuptools.setup(
 
     setup_requires=['pytest-runner'],
 
-    tests_require=['requests_mock', 'requests','pytest'],
+    tests_require=['requests_mock', 'requests', 'pytest'],
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
