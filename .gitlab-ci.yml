@@ -28,7 +28,7 @@ before_script:
   - make install
   # - sudo util/install.sh
   - python -V               # Print out python version for debugging
-  - sudo python setup.py install
+  - python setup.py install
   # - pip install virtualenv
   # - virtualenv venv
   # - source venv/bin/activate
