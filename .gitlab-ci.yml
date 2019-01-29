@@ -20,6 +20,7 @@ cache:
 before_script:
   - apt update
   - apt-get install -y git make python gcc help2man python-setuptools python-pip
+  - cd ..
   - git clone git://github.com/mininet/mininet
   - cd mininet
   - git checkout -b 2.2.2
@@ -27,10 +28,10 @@ before_script:
   - ls -lart
   - make install
   # - sudo util/install.sh
-  - python -V               # Print out python version for debugging
-  - python setup.py install
-  - cd ..
-  - ls -lart
+  # - python -V               # Print out python version for debugging
+  # - python setup.py install
+  # - cd ..
+  # - ls -lart
   - cd /builds/tsen/mininet-topology-yaml
   # - pip install virtualenv
   # - virtualenv venv
