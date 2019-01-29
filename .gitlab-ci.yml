@@ -18,11 +18,11 @@ cache:
     - venv/
 
 before_script:
+  - apt-get -y install mininet
   - python -V               # Print out python version for debugging
-  - pip install virtualenv
-  - virtualenv venv
-  - source venv/bin/activate
-  - sudo apt-get -y install mininet
+  # - pip install virtualenv
+  # - virtualenv venv
+  # - source venv/bin/activate
   # - pip install -r requirements.txt
 
 
