@@ -21,7 +21,7 @@ before_script:
   - git clone git://github.com/mininet/mininet
   - cd mininet
   - git checkout -b 2.2.0b3
-  - ~/mininet/util/install.sh -a
+  - util/install.sh -a
   - sudo mn --test pingall
   - python -V               # Print out python version for debugging
   # - pip install virtualenv
