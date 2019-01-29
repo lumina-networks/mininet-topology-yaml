@@ -29,6 +29,9 @@ before_script:
   # - sudo util/install.sh
   - python -V               # Print out python version for debugging
   - python setup.py install
+  - cd ..
+  - ls -lart
+  - cd mininet-topology-yaml/
   # - pip install virtualenv
   # - virtualenv venv
   # - source venv/bin/activate
