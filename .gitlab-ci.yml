@@ -18,7 +18,11 @@ cache:
     - venv/
 
 before_script:
-  - apt-get -y install mininet
+  - git clone git://github.com/mininet/mininet
+  - cd mininet
+  - git checkout -b 2.2.0b3
+  - ~/mininet/util/install.sh -a
+  - sudo mn --test pingall
   - python -V               # Print out python version for debugging
   # - pip install virtualenv
   # - virtualenv venv
