@@ -23,6 +23,8 @@ before_script:
   - git clone git://github.com/mininet/mininet
   - cd mininet
   - git checkout -b 2.2.2
+  - pwd
+  - ls -lart
   - make install
   # - sudo util/install.sh
   - python -V               # Print out python version for debugging
