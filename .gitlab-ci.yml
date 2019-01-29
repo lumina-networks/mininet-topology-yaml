@@ -22,7 +22,6 @@ before_script:
   - cd mininet
   - git checkout -b 2.2.2
   - make install
-  - sudo mn --test pingall
   - python -V               # Print out python version for debugging
   # - pip install virtualenv
   # - virtualenv venv
