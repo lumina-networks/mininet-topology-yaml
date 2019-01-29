@@ -13,7 +13,11 @@ setuptools.setup(
 
     packages=setuptools.find_packages(),
 
-    install_requires=['click', 'topology-yaml==0.1.3.1'],
+    install_requires=['click', 'topology-yaml==0.1.3.1', 'pytest'],
+
+    setup_requires=['pytest-runner'],
+
+    tests_require=['requests_mock', 'requests'],
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
