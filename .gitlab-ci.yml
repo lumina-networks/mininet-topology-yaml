@@ -37,7 +37,7 @@ before_script:
 test:
   script:
   - pip install pytest
-  - pytest tests
+  - pytest
   # - python setup.py test
   # - pip install pep8  # you can also use tox
   # - pep8 --ignore=E501
