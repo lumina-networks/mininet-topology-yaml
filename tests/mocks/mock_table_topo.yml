@@ -6,10 +6,10 @@ controllers:
   protocol: http
   user: admin
 customers:
-- hostname: test_host_name
-  port: 20
-  connects_to: test_endpoint_name
+- connects_to: test_endpoint_name
   customer: test_customer
+  hostname: test_host_name
+  port: 20
 hosts:
 - gw: 10.0.0.1
   ip: 10.0.1.1/16

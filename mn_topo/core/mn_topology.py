@@ -36,7 +36,8 @@ class MininetTopology(object):
         for link in self.topology.links:
             if link['source'] in self.mininet_topology.nodes() \
                     and link['destination'] in self.mininet_topology.nodes():
-                self.mininet_topology.addLink(link['source'], link['destination'])
+                self.mininet_topology.addLink(link.get('source'), link.get('destination'), link.get('source_port'),
+                                              link.get('destination_port'))
 
     def add_controllers(self):
         for controller in self.topology.controllers:
